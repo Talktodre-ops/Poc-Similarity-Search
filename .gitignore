@@ -1,0 +1,384 @@
+# Property Similarity Search - Git Ignore File
+
+# =============================================================================
+# LARGE DATA FILES & EMBEDDINGS
+# =============================================================================
+
+# CSV datasets (can be very large)
+*.csv
+realtor_cleaned_final.csv
+property_data.csv
+test_data.csv
+
+# Pre-built embeddings and search indices
+embeddings/
+*.npy
+*.index
+*.faiss
+*.pkl
+*.joblib
+
+# Model downloads and caches
+models/
+.cache/
+huggingface_cache/
+sentence_transformers_cache/
+
+# =============================================================================
+# PYTHON ENVIRONMENT & DEPENDENCIES
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+realtor/
+property-search-env/
+miniconda3/
+anaconda3/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =============================================================================
+# ENVIRONMENT & CONFIGURATION
+# =============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with secrets
+config.json
+secrets.json
+credentials.json
+service_account.json
+
+# Claude Code configuration
+/.claude
+.claude/
+claude.json
+
+# =============================================================================
+# LOGS & MONITORING
+# =============================================================================
+
+# Log files
+*.log
+logs/
+log/
+*.log.*
+app.log
+api.log
+search.log
+performance.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================================================
+# IDE & EDITOR FILES
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# JUPYTER & DATA SCIENCE
+# =============================================================================
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+jupyter_notebook_config.py
+
+# IPython
+profile_default/
+ipython_config.py
+
+# =============================================================================
+# TEMPORARY & BACKUP FILES
+# =============================================================================
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+*~
+
+# Backup files
+*.orig
+*.rej
+*.backup
+*.bkp
+*.old
+
+# =============================================================================
+# DOCKER & CONTAINERIZATION
+# =============================================================================
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+.docker/
+
+# Container runtime
+.container/
+containers/
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+*.pem
+
+# Google Cloud
+.gcloud/
+gcloud_config/
+
+# Azure
+.azure/
+
+# Kubernetes
+*.kubeconfig
+kube-config
+
+# =============================================================================
+# DATABASE & STORAGE
+# =============================================================================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# =============================================================================
+# PERFORMANCE & PROFILING
+# =============================================================================
+
+# Profiling data
+*.prof
+*.profile
+.prof/
+
+# Benchmarking results
+benchmark_results/
+performance_tests/
+
+# =============================================================================
+# FRONTEND (FUTURE)
+# =============================================================================
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Next.js
+.next/
+out/
+
+# React build
+build/
+dist/
+
+# =============================================================================
+# MISC & PROJECT SPECIFIC
+# =============================================================================
+
+# Large test files
+large_test_data/
+sample_data_large/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Local development tools
+.local/
+local_config.py
+
+# Performance monitoring
+monitoring/
+metrics/
+
+# Custom exclusions for this project
+search_cache/
+embedding_cache/
+model_downloads/
+property_similarity_cache/
+
+# =============================================================================
+# ALLOW SPECIFIC FILES (OVERRIDE PATTERNS ABOVE)
+# =============================================================================
+
+# Allow small sample datasets for examples
+!sample_data_small.csv
+!example_properties.csv
+!test_sample.csv
+
+# Allow configuration templates
+!config.template.json
+!.env.example
+
+# Allow documentation
+!README.md
+!CLAUDE.md
+!docs/
+!*.md
+
+# Allow requirements files
+!requirements.txt
+!requirements-dev.txt
+!pyproject.toml

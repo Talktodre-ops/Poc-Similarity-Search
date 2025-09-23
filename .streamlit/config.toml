@@ -1,0 +1,54 @@
+[global]
+
+# Development mode - set to false for production
+developmentMode = false
+
+[server]
+
+# Port for the web app
+port = 8501
+
+# Allow CORS for all origins (adjust for production)
+enableCORS = true
+enableXsrfProtection = true
+
+# Maximum upload size (in MB)
+maxUploadSize = 200
+
+# Maximum message size
+maxMessageSize = 200
+
+# Enable WebSocket compression
+enableWebsocketCompression = true
+
+[browser]
+
+# Automatically open browser when starting
+gatherUsageStats = false
+
+[theme]
+
+# Primary color (blue theme)
+primaryColor = "#1f77b4"
+
+# Background color
+backgroundColor = "#ffffff"
+
+# Secondary background color
+secondaryBackgroundColor = "#f0f2f6"
+
+# Text color
+textColor = "#262730"
+
+# Font family
+font = "sans serif"
+
+[client]
+
+# Show sidebar navigation
+showSidebarNavigation = true
+
+[mapbox]
+
+# Token for mapbox (if using maps)
+# token = ""
